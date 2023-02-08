@@ -1,0 +1,34 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+    <servlet-name>addservlet</servlet-name>
+    <servlet-class>com.mybankingapp.addservlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>addservlet</servlet-name>
+    <url-pattern>/add</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddCustomerServlet</servlet-name>
+    <servlet-class>com.mybankingapp.controllers.AddCustomerServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddCustomerServlet</servlet-name>
+    <url-pattern>/AddCustomer</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>AddTransactionServlet</servlet-name>
+    <servlet-class>com.mybankingapp.controllers.AddTransactionServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddTransactionServlet</servlet-name>
+    <url-pattern>/AddTransaction</url-pattern>
+  </servlet-mapping>
+</web-app>
+
